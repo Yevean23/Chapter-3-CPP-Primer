@@ -44,7 +44,7 @@ int main()
 	getline(cin, string1);
 	getline(cin, string2);
 	if (string1 != string2) {
-		cout << string1 + ((string1 > string2) ? " > " : " <= ") + string2 << endl;
+		cout << string1 + ((string1 > string2) ? " > " : " < ") + string2 << endl;
 	}
 	else {
 		cout << string1 + " is the same as " + string2 << endl;
