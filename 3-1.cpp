@@ -24,7 +24,7 @@ vectors? What are the values of the elements?
 */
 
 
-int main() {
+int main4() {
 	// testing something from the chapter
 	vector<string> vt{ 10 };
 	for (auto &i : vt)
@@ -33,7 +33,7 @@ int main() {
 
 	// 3.12
 	vector<vector<int>> ivec; // initialize a vector of int vectors
-	vector<string> svec = ivec; // error, string vector svec is be copy initialized from an int vector
+	//vector<string> svec = ivec; // error, string vector svec is be copy initialized from an int vector
 	vector<string> svec(10, "null"); // initialize a vector of 10 strings, each with the literal string value: "null";
 
 	// 3.13

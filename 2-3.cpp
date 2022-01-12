@@ -42,12 +42,12 @@ int main3() {
 
 	
 	// 3.7 I think it would work without any issues. 
-	// if thing was type char and not char& then myString2 would not be modified. 
+	// if c was type char and not char& then myString2 would not be modified. 
 	// it would keep initializing chars to the letters of myString2 and then assigning 'X' to them
 	string myString2;
 	getline(cin, myString2);
-	for (char &thing : myString2)
-		thing = 'X';
+	for (char &c : myString2)
+		c = 'X';
 	cout << myString2 << endl;
 
 	// 3.8
@@ -62,7 +62,7 @@ int main3() {
 		myString2[j] = 'Z';
 	}
 	cout << myString2 << endl;
-	// Although the traditional for loop is the superiour loop in general, in this case I do prefer the compact style of the range-based for.
+	// Although the traditional for loop is the superiour loop in general, in this case I do prefer the compact style of the range-based for loop.
 
 
 	// 3.9
