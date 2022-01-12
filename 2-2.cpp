@@ -20,7 +20,7 @@ space.
 #include <string>
 using namespace std;
 
-int main3()
+int main2()
 {
 	
 	// 3.2

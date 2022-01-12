@@ -32,7 +32,7 @@ for (auto &c : s) { ... }
 
 
 
-int main() {
+int main3() {
 	// 3.6
 	string myString;
 	getline(cin, myString);
@@ -40,8 +40,10 @@ int main() {
 		thing = 'X';
 	cout << myString << endl;
 
-
-	// 3.7 I think it would work without any issues.
+	
+	// 3.7 I think it would work without any issues. 
+	// if thing was type char and not char& then myString2 would not be modified. 
+	// it would keep initializing chars to the letters of myString2 and then assigning 'X' to them
 	string myString2;
 	getline(cin, myString2);
 	for (char &thing : myString2)
@@ -81,7 +83,6 @@ int main() {
 	const string s1 = "Keep out!";
 	for (auto& c : s1) { /* ... */ }
 	// yes the range-based for loop is legal. c is a reference to a const char
-
 
 
 	return 0;
