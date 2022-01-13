@@ -85,7 +85,7 @@ void print_opposite_sums(vector<int> myints) {
 	}
 }
 
-int main() {
+int main6() {
 
 	// 3.16
 	vector<int> v1; // empty int vector
@@ -135,10 +135,10 @@ int main() {
 
 	// 3.19
 	int n = 10;
-	vector<int> vec1(n, 42); // this is the most readable method
+	vector<int> vec1(n, 42); // this is the most readable method, and works becuase the value is the same
 	vector<int> vec2 = { 42,42,42,42,42,42,42,42,42,42 }; // this does not scale and loses readability quickly
 	vector<int> vec3;
-	for (; vec3.size() != n; vec3.push_back(42)) {} // using push_back to create dynamically sized arrays is recommended
+	for (; vec3.size() != n; vec3.push_back(42)) {} // using push_back to create dynamically sized arrays is recommended, however in this case, maybe not
 	print_len_and_cont(vec1);
 	print_len_and_cont(vec2);
 	print_len_and_cont(vec3);
