@@ -19,7 +19,7 @@ void print_len_and_cont2(vector<T> in_vec) {
 	for (auto i = in_vec.cbegin(); i != in_vec.cend(); i++) { cout << *i << endl; }
 }
 
-int main() {
+int main7() {
 	// 3.21
 	vector<int> v1; // empty int vector
 	vector<int> v2(10); // an int vector with 10 uninitialized ints
@@ -53,4 +53,6 @@ int main() {
 		*it = 2 * (*it);
 	}
 	print_len_and_cont2(v0);
+
+	return 0;
 }

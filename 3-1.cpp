@@ -38,9 +38,9 @@ int main4() {
 
 	// 3.13
 	vector<int> v1; // empty int vector
-	vector<int> v2(10); // an int vector with 10 uninitialized ints
+	vector<int> v2(10); // an int vector with 10 ints with values 0
 	vector<int> v3(10, 42); // an int vector with 10 ints with the literal value of 42
-	vector<int> v4{ 10 }; // an int vector with 10 uninitialized ints
+	vector<int> v4{ 10 }; // one element with value of 10
 	vector<int> v5{ 10, 42 }; // an int vector with 10 ints with the literal value of 42
 	vector<string> v6{ 10 }; // a vector of 10 empty strings
 	vector<string> v7{ 10, "hi" }; // a vector of 10 strings, each with the literal value: "hi"

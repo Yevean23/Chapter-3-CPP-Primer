@@ -33,7 +33,7 @@ void print_len_and_cont(vector<T> input_vec) {
 	cout << "size of vector: " << input_vec.size() << endl;
 	cout << "Printing Contents:" << endl;
 	for (T& i : input_vec)
-		cout << i << endl;
+		cout << "|" << i << "|" << endl;
 	cout << "---END OF VECTOR---\n\n" << endl;
 }
 
