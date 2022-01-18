@@ -31,7 +31,7 @@ void print_arr(T& arr) {
 
 string sa[10];
 int ia[10];
-int main() {
+int main9() {
 	/*/ 3.27
 	unsigned buf_size = 1024;
 	int ia[buf_size]; // buf_size must be const

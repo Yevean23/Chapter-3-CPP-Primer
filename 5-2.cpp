@@ -21,7 +21,7 @@ Exercise 3.33: What would happen if we did not initialize the scores array
 in the program on page 116?
 */
 
-int main9() {
+int main10() {
 	// 3.30  ix must be strictly less than array_size
 
 	// 3.31
