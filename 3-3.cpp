@@ -128,10 +128,8 @@ int main6() {
 	print_strings(myStrings);
 
 	// 3.18
-	// vector<int> ivec;
-	// ivec[0] = 42;
-	// ivec.size() = 0. When indexing, the index must be strictly less than the size. 0 !< 0, thus illegal. 
-	
+	vector<int> ivec;
+	// ivec[0] = 42; // When indexing, the index must be strictly less than the size. 0 !< 0, thus illegal. 
 
 	// 3.19
 	int n = 10;

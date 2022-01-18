@@ -15,7 +15,7 @@ similar program to compare two vectors.
 */
 
 
-int main() {
+int main12() {
 
 	// 3.34
 	// p2 must be >= p1
