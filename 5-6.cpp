@@ -26,6 +26,7 @@ int main() {
 		}
 		cout << endl;
 	}
+	cout << endl;
 
 	for (size_t i = 0; i < 3; ++i) {
 		for (size_t j = 0; j < 4; ++j) {
@@ -33,14 +34,34 @@ int main() {
 		}
 		cout << endl;
 	}
+	cout << endl;
 
 	for (auto pi = ia; pi != ia + 3; ++pi) {
-		for (auto& pj = pi; pj != pi+4; ++pj) {
+		for (auto pj = *pi; pj != *pi+4; ++pj) {
 			cout << *pj << " ";
 		}
 		cout << endl;
 	}
+	cout << endl;
 
+	// 3.44
+	typedef int int_array[4];
 
+	for (int_array *pi = ia; pi != ia + 3; ++pi) {
+		for (int *pj = *pi; pj != *pi + 4; ++pj) {
+			cout << *pj << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	// 3.45
+	for (auto pi = ia; pi != ia + 3; ++pi) {
+		for (auto pj = *pi; pj != *pi + 4; ++pj) {
+			cout << *pj << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
 	return 0;
 }
