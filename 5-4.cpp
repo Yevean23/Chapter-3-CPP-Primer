@@ -22,8 +22,7 @@ concatenation of the two arrays. Use strcpy and strcat to copy the two
 arrays into the third.
 */
 
-//13
-int main() {
+int main13() {
 	// 3.37 will run until it hits a nullptr? or maybe a "\0"
 	const char ca[] = { 'h', 'e', 'l', 'l', 'o' };
 	const char* cp = ca;
@@ -46,11 +45,11 @@ int main() {
 	cout << "The C strings are " << (strcmp(ca1,ca2) ? "equal" : "not equal") << endl;
 
 	// 3.40
-	constexpr auto arr_size = (cend(ca1) - cbegin(ca1)) + (cend(ca2) - cbegin(ca2));
+	constexpr size_t arr_size = (cend(ca1) - cbegin(ca1)) + (cend(ca2) - cbegin(ca2));
 
 	char ca3[arr_size];
-	strcat(ca3, ca1);
-	strcat(ca3, ca2);
+	strcat_s(ca3, ca1);
+	strcat_s(ca3, ca2);
 
 	return 0;
 }
