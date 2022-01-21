@@ -20,6 +20,7 @@ int main() {
 	// 3.43
 	int ia[3][4] = {0};
 
+	// for range
 	for (auto& row : ia) {
 		for (auto col : row) {
 			cout << col << " ";
@@ -28,6 +29,7 @@ int main() {
 	}
 	cout << endl;
 
+	// using subscripting
 	for (size_t i = 0; i < 3; ++i) {
 		for (size_t j = 0; j < 4; ++j) {
 			cout << ia[i][j] << " ";
@@ -36,8 +38,9 @@ int main() {
 	}
 	cout << endl;
 
-	for (auto pi = ia; pi != ia + 3; ++pi) {
-		for (auto pj = *pi; pj != *pi+4; ++pj) {
+	// using pointers
+	for (int (* pi)[4] = ia; pi != ia + 3; ++pi) {
+		for (int *pj = *pi; pj != *pi+4; ++pj) {
 			cout << *pj << " ";
 		}
 		cout << endl;
