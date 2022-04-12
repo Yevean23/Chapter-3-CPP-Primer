@@ -15,14 +15,15 @@ similar program to compare two vectors.
 */
 
 
-int main12() {
+int main11() {
 
 	// 3.34
 	// p2 must be >= p1
 	// adding the difference to p1 must not make p1 go to more than one past the last index of the array
 
 	// 3.35
-	int arr1[5];
+	constexpr size_t size = 5;
+	int arr1[size];
 	int* abegin = begin(arr1), * aend = end(arr1);
 
 	while (abegin != aend) {
@@ -31,7 +32,7 @@ int main12() {
 	}
 
 	// 3.36
-	int arr2[5];
+	int arr2[size];
 	for (int i = 0; i < 5; i++) {
 		*(arr2 + i) = 0;
 	}
@@ -55,7 +56,7 @@ int main12() {
 
 	}
 
-	cout << (arr1 == arr2) << endl;
+	cout << "The arrays are : " << ((arr1 == arr2) ? "equal" : "not equal") << endl;
 	cout << "The arrays are : " << (arraysEqual ? "equal" : "not equal") << endl;
 
 	bool vectorsEqual = true;
@@ -81,6 +82,7 @@ int main12() {
 		}
 
 	}
+	cout << "The vectors are : " << ((vec1 == vec2) ? "equal" : "not equal") << endl;
 	cout << "The vectors are : " << (vectorsEqual ? "equal" : "not equal") << endl;
 
 

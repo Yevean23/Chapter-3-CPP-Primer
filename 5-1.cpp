@@ -54,7 +54,7 @@ int main9() {
 	
 	// 3.29
 	// you don't always know the how many elements you will need, so a vector is more flexible
-
+	// arrays cannot be declared as a copy of another.
 
 	return 0;
 }

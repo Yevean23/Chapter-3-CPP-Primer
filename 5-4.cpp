@@ -22,8 +22,8 @@ concatenation of the two arrays. Use strcpy and strcat to copy the two
 arrays into the third.
 */
 
-int main13() {
-	// 3.37 will run until it hits a nullptr? or maybe a "\0"
+int main12() {
+	// 3.37 will run until it hits a '\0'
 	const char ca[] = { 'h', 'e', 'l', 'l', 'o' };
 	const char* cp = ca;
 	while (*cp) {
@@ -32,7 +32,7 @@ int main13() {
 
 
 	// 3.38
-	// that would simply point to another random place in memory
+	// that would simply point to a random place in memory
 	
 	
 	// 3.39
@@ -40,16 +40,18 @@ int main13() {
 	string string2 = "hello";
 	cout << "The strings are " << (string1 == string2 ? "equal" : "not equal") << endl;
 	
-	const char ca1[] = "A string example";
-	const char ca2[] = "A different string";
-	cout << "The C strings are " << (strcmp(ca1,ca2) ? "equal" : "not equal") << endl;
+	const char ca1[] = { 'h','i','\0' };
+	const char ca2[] = { 'h','e','l','l','o','\0' };
+	cout << "The C strings are " << (strcmp(ca1,ca2) == 0 ? "equal" : "not equal") << endl;
 
 	// 3.40
 	constexpr size_t arr_size = (cend(ca1) - cbegin(ca1)) + (cend(ca2) - cbegin(ca2));
 
-	char ca3[arr_size];
+	char ca3[arr_size] = {};
+
 	strcat_s(ca3, ca1);
 	strcat_s(ca3, ca2);
+	cout << ca3 << endl;
 
 	return 0;
 }

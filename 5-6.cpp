@@ -15,7 +15,7 @@ Exercise 3.45: Rewrite the programs again, this time using auto.
 */
 
 
-int main() {
+int main15() {
 
 	// 3.43
 	int ia[3][4] = {0};
