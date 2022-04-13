@@ -17,6 +17,11 @@ int main14() {
 	int x[] = { 1,2,3,4 };
 	vector<int> y(cbegin(x), cend(x));
 
+	for (auto& i : y) {
+		cout << i << endl;
+	}
+
+
 	// 3.42
 	int z[4];
 	int* k = z;

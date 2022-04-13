@@ -45,13 +45,18 @@ int main12() {
 	cout << "The C strings are " << (strcmp(ca1,ca2) == 0 ? "equal" : "not equal") << endl;
 
 	// 3.40
-	constexpr size_t arr_size = (cend(ca1) - cbegin(ca1)) + (cend(ca2) - cbegin(ca2));
+	constexpr size_t arr_size = (cend(ca1) - cbegin(ca1) -1 ) + (cend(ca2) - cbegin(ca2) -1 ) + 1;
+
+	cout << (cend(ca1) - cbegin(ca1)) << endl;
+	cout << sizeof(ca1) << endl;
 
 	char ca3[arr_size] = {};
 
 	strcat_s(ca3, ca1);
 	strcat_s(ca3, ca2);
 	cout << ca3 << endl;
+	cout << sizeof(ca3) << endl;
+
 
 	return 0;
 }
